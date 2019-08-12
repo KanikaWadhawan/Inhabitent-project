@@ -17,6 +17,45 @@ function red_starter_body_classes( $classes ) {
 		$classes[] = 'group-blog';
 	}
 
+	
+	
+	if (is_singular('page')){
+		global $post;
+		// inhabitent_debug($post);
+		$classes[] = 'page-' . $post-> post_name;
+	}
+	
+	// inhabitent_debug($classes);
+
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+// Remove "Editor" links from sub-menus
+
+function inhabitent_remove_submenus() {
+    remove_submenu_page( 'themes.php', 'theme-editor.php' );
+    remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
+}
+add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
+function inhabitent_debug($var){
+	echo '<pre>';
+	var_dump($var);
+	echo '</pre>';
+}
+
+function my_custom_login_logo() {
+	echo '<style type="text/css">                                                                   
+		#login h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) ; 
+		height: 53px ; width: 300px ; background-size: cover ;}                            
+	</style>';
+}
+add_action('login_head', 'my_custom_login_logo');
+
+function the_url(  ) {
+	// $url= $url . '/download';
+	// return $url;
+    return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'the_url' );
