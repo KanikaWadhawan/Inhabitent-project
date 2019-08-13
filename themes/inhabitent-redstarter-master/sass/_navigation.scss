@@ -42,13 +42,15 @@ a {
 		
 	}
 
-	.menu-toggle {
-		display: none;
-	}
-
 	.main-navigation {
 		// clear: both;
 		width: 100%;
+
+		.menu-toggle {
+			display: none;
+
+			
+		}
 		
 		@include flex-items-content(center, space-between);
 		height: 100%;
