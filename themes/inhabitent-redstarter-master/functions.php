@@ -67,6 +67,18 @@ function red_starter_widgets_init() {
 }
 add_action( 'widgets_init', 'red_starter_widgets_init' );
 
+function inhabitent_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html( 'Footer' ),
+		'id'            => 'footer-1',
+		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'inhabitent_widgets_init' );
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
@@ -84,7 +96,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  */
 function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-	wp_enqueue_style('inhabitent-fontawesome','https://use.fontawesome.com/releases/v5.8.2/css/all.css' );
+	wp_enqueue_script('inhabitent-fontawesome','https://kit.fontawesome.com/0399b79d75.js', array(), '',true );
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('inhabitent-script',  get_template_directory_uri() . '/build/js/script.min.js', array('jquery'), '20151215', true);
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );

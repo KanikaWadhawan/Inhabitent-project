@@ -10,7 +10,13 @@
 
 .hentry {
 	margin: 0 0 $base__space-unit;
+
+	.entry-header{
+		font-family: $font__header;
+		text-transform: uppercase;
+	}
 }
+
 
 .updated:not(.published){
 	display: none;
