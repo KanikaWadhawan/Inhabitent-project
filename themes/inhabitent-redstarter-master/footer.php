@@ -14,17 +14,14 @@
 					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
 				</div><!-- .site-info -->
 
-			<?php
+			<!-- <?php
 				if ( is_active_sidebar('footer-1')) {
 					echo '<div id="footer-sidebar-1" class="widget-area" role="complementary">';
 				    dynamic_sidebar('footer-1');
 			        echo '</div>';
 				}
-			?>
+			?> -->
 
-			<div id="footer-sidebar-1" class="widget-area" role="complementary">
-				<?php dynamic_sidebar('footer-1');?>
-			</div>
 
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

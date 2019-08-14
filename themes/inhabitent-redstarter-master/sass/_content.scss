@@ -144,5 +144,14 @@
 		
 	
 
+.post-title{
+	text-align:center;
+	text-transform: uppercase;
+	font-family: $font__header;
+}
+
+.post-container{
+	@include flex-items-content(center,space-between);
+}
 
 
