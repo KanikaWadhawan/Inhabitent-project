@@ -391,7 +391,8 @@ img {
   height: auto;
   /* Make sure images are scaled correctly. */
   max-width: 100%;
-  /* Adhere to container width. */ }
+  /* Adhere to container width. */
+  width: 1500px; }
 
 table {
   margin: 0 0 1.5rem;
@@ -463,6 +464,18 @@ input[type="search"] {
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+.search-form .search-field {
+  border: none;
+  border-radius: unset;
+  width: 0; }
+
+.search-submit {
+  border: none;
+  border-radius: unset;
+  position: absolute;
+  background-color: transparent;
+  color: #248A83; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -653,6 +666,73 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  .site-content .content-area {
+    border-right: 1px solid #e1e1e1;
+    padding-right: 5%;
+    width: 73%; }
+
+.blog .entry-header,
+.single-post .entry-header,
+.archive:not(.tax-product-type):not(.post-type-archive) .entry-header {
+  line-height: 0;
+  position: relative; }
+  .blog .entry-header h1, .blog .entry-header h2,
+  .single-post .entry-header h1,
+  .single-post .entry-header h2,
+  .archive:not(.tax-product-type):not(.post-type-archive) .entry-header h1,
+  .archive:not(.tax-product-type):not(.post-type-archive) .entry-header h2 {
+    background-color: #248A83;
+    color: #fff;
+    left: 0;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    top: 0;
+    line-height: 2.25rem;
+    font-size: 2.1rem; }
+
+.blog .entry-meta,
+.single-post .entry-meta,
+.archive:not(.tax-product-type):not(.post-type-archive) .entry-meta {
+  background-color: #248A83;
+  bottom: 0;
+  color: #fff;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase; }
+
+.blog .entry-header a,
+.blog .entry-meta a,
+.single-post .entry-header a,
+.single-post .entry-meta a,
+.archive:not(.tax-product-type):not(.post-type-archive) .entry-header a,
+.archive:not(.tax-product-type):not(.post-type-archive) .entry-meta a {
+  color: #fff; }
+  .blog .entry-header a:hover,
+  .blog .entry-meta a:hover,
+  .single-post .entry-header a:hover,
+  .single-post .entry-meta a:hover,
+  .archive:not(.tax-product-type):not(.post-type-archive) .entry-header a:hover,
+  .archive:not(.tax-product-type):not(.post-type-archive) .entry-meta a:hover {
+    color: #fff9c0; }
+
+.widget-area, .content-area {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem; }
+
+.widget-area {
+  padding-left: 5%;
+  width: 27%; }
 
 /*--------------------------------------------------------------
 # Media

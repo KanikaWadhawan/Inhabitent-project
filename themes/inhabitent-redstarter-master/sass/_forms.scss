@@ -60,3 +60,25 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+.search-form{
+
+
+.search-field{
+	border:none;
+	border-radius:unset;
+	width:0;
+}
+}
+
+
+
+
+
+.search-submit{
+	border:none;
+	border-radius:unset;
+	position: absolute;
+	background-color: transparent;
+	color:$color__link;
+}
