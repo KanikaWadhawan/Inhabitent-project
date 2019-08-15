@@ -750,6 +750,27 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.site-footer {
+  background: url(../../images/dark-wood@2x.png);
+  height: 300px; }
+  .site-footer .footer-class {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    padding-top: 20px;
+    padding-left: 70px; }
+    .site-footer .footer-class p {
+      color: #fff; }
+    .site-footer .footer-class h3 {
+      color: #d99054; }
+    .site-footer .footer-class .footer-logo {
+      max-width: 50%;
+      margin-top: 30px;
+      margin-left: 50px; }
+  .site-footer .copyright {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/

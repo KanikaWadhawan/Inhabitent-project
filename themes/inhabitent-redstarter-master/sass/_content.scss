@@ -155,3 +155,36 @@
 }
 
 
+.site-footer{
+	background: url(../../images/dark-wood@2x.png);
+	height:300px;
+	
+	.footer-class{
+		display: grid;
+		grid-template-columns: 1fr 1fr 2fr;
+		padding-top: 20px;
+		padding-left: 70px;
+		p{
+			color:$color__background-body;
+		}
+		h3{
+			color: $color__heading;
+		}
+		.footer-logo{
+			max-width: 50%;
+			margin-top:30px;
+			margin-left: 50px;
+		}
+		
+	}
+
+	.copyright{
+		text-align: center;
+		text-transform: uppercase;
+		color:$color__background-body;
+	}
+}
+
+
+
+
