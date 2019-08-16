@@ -61,13 +61,20 @@ textarea {
 	width: 100%;
 }
 
+
 .search-form{
 
-
+	.label-container{
+		display:flex;
 .search-field{
 	border:none;
 	border-radius:unset;
 	width:0;
+}
+
+.expand{
+	width:11rem;
+}
 }
 }
 
@@ -78,7 +85,7 @@ textarea {
 .search-submit{
 	border:none;
 	border-radius:unset;
-	position: absolute;
+	// position: absolute;
 	background-color: transparent;
 	color:$color__link;
 }

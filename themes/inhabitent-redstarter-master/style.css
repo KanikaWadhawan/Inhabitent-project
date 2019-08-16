@@ -290,7 +290,13 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: Novecento Sans Web,sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 2.5rem; }
 
 /* Copy */
 p {
@@ -465,15 +471,20 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-.search-form .search-field {
-  border: none;
-  border-radius: unset;
-  width: 0; }
+.search-form .label-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .search-form .label-container .search-field {
+    border: none;
+    border-radius: unset;
+    width: 0; }
+  .search-form .label-container .expand {
+    width: 11rem; }
 
 .search-submit {
   border: none;
   border-radius: unset;
-  position: absolute;
   background-color: transparent;
   color: #248A83; }
 
@@ -536,6 +547,7 @@ a {
       list-style-type: none;
       padding: 0;
       margin: 0;
+      padding-right: 1.5rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -554,6 +566,10 @@ a {
       height: 100%;
       width: auto;
       display: block; }
+  .site-header .mini-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -835,3 +851,52 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* About page */
+.page-about .site-header {
+  background-color: transparent;
+  border-bottom: 0;
+  position: absolute;
+  text-shadow: 1px 1px 2px #323232; }
+  .page-about .site-header .brand-logo {
+    color: #fff; }
+  .page-about .site-header .mini-navigation a {
+    color: #fff; }
+    .page-about .site-header .mini-navigation a:hover {
+      color: #fff9c0; }
+  .page-about .site-header .mini-navigation .search-submit {
+    color: #fff; }
+  .page-about .site-header .mini-navigation .search-field {
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px; }
+
+.page-about .site-content {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: auto; }
+  .page-about .site-content .entry-content {
+    margin: 0; }
+    .page-about .site-content .entry-content .hero-image-header {
+      width: 100vw;
+      height: 100vh; }
+      .page-about .site-content .entry-content .hero-image-header h1 {
+        color: #fff; }
+    .page-about .site-content .entry-content h2 {
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 1.5rem; }
+
+.page-about .content-area {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  border: none; }
+
+.page-about .entry-content > :not(header) {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px; }

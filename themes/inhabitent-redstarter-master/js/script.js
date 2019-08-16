@@ -5,8 +5,9 @@
     $(document).ready(function() {
      
         $(".search-submit").click(function() {
-           $(".search-field").toggle();
-           $("input[type='search']").focus();
+            console.log(1);
+           $(".search-field").toggleClass("expand");
+         
          });
 
      });

@@ -23,6 +23,10 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+
 		<?php the_excerpt(); ?>
+		<a href="<?= esc_url( get_permalink() );?>">
+		<button type="button">Read more →</button>
+		</a>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
