@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-			<h2>Shop Stuff</h2>
+			<h1>Shop Stuff</h1>
 
 			</header><!-- .page-header -->
 
@@ -21,55 +21,75 @@ get_header(); ?>
 				<ul>
 				<?php 
    
-   $namesArgs=[
-	   'taxonomy'=>'product-type',
-	   'hide_empty' => true,
-	   'order' => 'ASC',
-   ];
+  			 $namesArgs=[
+			   'taxonomy'=>'product-type',
+	  		   'hide_empty' => true,
+	  		   'order' => 'ASC',
+ 					  ];
 
-   $names =get_terms($namesArgs);
-   foreach ( $names as $name ) {
+ 			  $names =get_terms($namesArgs);
+  				 foreach ( $names as $name ) {
 	   
 	
-	  echo "<li><a href=". get_term_link($name). ">" .$name->name."</a></li>"; 
+	 			 echo "<li><a href=". get_term_link($name). ">" .$name->name."</a></li>"; 
 	 
 	  
        
 
-   } ?>
-</ul>
+ 					  } ?>
+				</ul>
 
 			</div>
 
 
 
-			<?php /* Start the Loop */ ?>
-		 <?php
-		//   while ( have_posts() ) : the_post();
-			 ?> 
-		
-			<?php
-   $args = array(
-	    'post_type' => 'product',
-		'order' => 'ASC',
-		'posts_per_page'=>-1,
-	);
-        $images = get_posts( $args );
-	?>
+				<?php /* Start the Loop */ ?>
+				 <?php
+				//   while ( have_posts() ) : the_post();
+				 ?> 
+		<div class="product-grid">
+				<?php
+  			 $args = array(
+		    'post_type' => 'product',
+			'order' => 'ASC',
+			'posts_per_page'=>-1,
+				);
+       		 $images = get_posts( $args );
+				?>
 
-	
-<?php foreach ($images as $image): setup_postdata($image); ?>
-<?php 
- echo get_the_post_thumbnail($image->ID);
-echo ($image->post_title);
-echo '.................';
-echo '$'.CFS()-> get('product_price');
-echo get_post_permalink($image->ID);
+	        
+			<?php foreach ($images as $image): setup_postdata($image); ?>
+			<?php 
+			
+			echo '<div class="product-grid-item">';
+			echo '<div class="grid-thumbnail">';
+			echo "<a href=".get_post_permalink($image->ID). ">";
 
- ?>
+			echo get_the_post_thumbnail($image->ID);
+			echo '</a>';
+			echo '</div>';
+			echo '<div class="product-info">';
+			echo '<div class="product-info-title">';
+			
+			echo ($image->post_title);
+			
+			echo '</div>';
+			echo '<div class="dots"></div>'; 
 
-<?php endforeach ?>
-<?php wp_reset_postdata() ?>
+			// echo '.................';
+			echo '<div class="product-info-price">';
+			echo '$'.CFS()-> get('product_price');
+			echo '</div>';
+
+			
+			
+			echo '</div>';
+            echo '</div>';
+			 ?>
+			
+			<?php endforeach ?>
+			
+			<?php wp_reset_postdata() ?>
 
 			<?php
 			//  endwhile; 
@@ -77,14 +97,14 @@ echo get_post_permalink($image->ID);
 
 		
 
-		<?php else : ?>
+			<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
-
+			<?php endif; ?>
+			</div><!--grid-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

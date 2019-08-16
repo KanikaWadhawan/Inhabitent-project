@@ -186,5 +186,110 @@
 }
 
 
+/* Products Archive */
 
+.post-type-archive-product{
+
+	.site-content .content-area{
+
+		border-right: none;
+		padding-right: 0%;
+		width:100%;
+		max-width: 1120px;
+
+		.page-header h1{
+			text-align:center;
+		}
+
+		.shop-container ul{
+
+			display: flex;
+           font-family: Novecento Sans Web,sans-serif;
+           font-size: 19.2px;
+           font-size: 1.2rem;
+ 
+           justify-content: center;
+		   list-style-type: none;
+		   margin-left: 0px;
+		   margin-bottom:3rem;
+		   border-bottom:$dashed_border;
+           padding-left: 0;
+		   text-transform: uppercase;
+		   
+		   li{
+			   padding: 1.5rem;
+		   }
+		}
+
+		.product-grid{
+
+			display: grid;
+    		grid-template-columns: repeat(4,262px);
+    		grid-gap: 1.4rem;
+			margin-bottom: 1.5rem;
+			
+			.product-grid-item{
+				border: $solid_border;
+
+				.grid-thumbnail{
+					background-color: $color__text-col;
+    				height: 250px;
+   				    overflow: hidden;
+    				position: relative;
+				}
+			}
+			.product-grid-item .wp-post-image {
+				left: 50%;
+				max-height: 250px;
+				max-width: none;
+				position: absolute;
+				top: 50%;
+				transform: translate(-50%,-52%);
+				width: auto;
+			}
+
+			.product-grid-item .product-info-title {
+				
+				font-family: Merriweather Web,serif;
+				letter-spacing: 0;
+				flex-grow:1;
+				padding-left: 15px;
+				white-space: nowrap;
+
+				
+			
+			}
+			.dots{
+				flex-grow:1;
+				overflow: hidden;
+					
+					width:100%;
+				&::after{
+					content:'...................................................';
+					
+				}
+			}
+
+			.product-grid-item .product-info-price {
+				
+				font-family: Merriweather Web,serif;
+				letter-spacing: 0;
+				
+				padding-right: 15px;
+			}
+
+			.product-grid-item .product-info{
+				display:flex;
+				justify-content: space-between;
+			}
+
+		}
+	}
+
+
+
+
+
+
+}
 
