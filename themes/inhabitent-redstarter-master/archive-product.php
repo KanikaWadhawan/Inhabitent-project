@@ -48,61 +48,55 @@ get_header(); ?>
 				//   while ( have_posts() ) : the_post();
 				 ?> 
 		<div class="product-grid">
-				<?php
+			<?php
   			 $args = array(
 		    'post_type' => 'product',
 			'order' => 'ASC',
 			'posts_per_page'=>-1,
 				);
        		 $images = get_posts( $args );
-				?>
+			?>
 
 	        
 			<?php foreach ($images as $image): setup_postdata($image); ?>
-			<?php 
+				<?php 
 			
-			echo '<div class="product-grid-item">';
-			echo '<div class="grid-thumbnail">';
-			echo "<a href=".get_post_permalink($image->ID). ">";
+				echo '<div class="product-grid-item">';
+				echo '<div class="grid-thumbnail">';
+				echo "<a href=".get_post_permalink($image->ID). ">";
 
-			echo get_the_post_thumbnail($image->ID);
-			echo '</a>';
-			echo '</div>';
-			echo '<div class="product-info">';
-			echo '<div class="product-info-title">';
-			
-			echo ($image->post_title);
-			
-			echo '</div>';
-			echo '<div class="dots"></div>'; 
+				echo get_the_post_thumbnail($image->ID);
+				echo '</a>';
+				echo '</div>';
+				echo '<div class="product-info">';
+				echo '<div class="product-info-title">';
+				
+				echo ($image->post_title);
+				
+				echo '</div>';
+				echo '<div class="dots"></div>'; 
 
-			// echo '.................';
-			echo '<div class="product-info-price">';
-			echo '$'.CFS()-> get('product_price');
-			echo '</div>';
+				// echo '.................';
+				echo '<div class="product-info-price">';
+				echo '$'.CFS()-> get('product_price');
+				echo '</div>';
 
-			
-			
-			echo '</div>';
-            echo '</div>';
-			 ?>
-			
+				
+				
+				echo '</div>';
+            	echo '</div>';
+				 ?>
+		
 			<?php endforeach ?>
 			
-			<?php wp_reset_postdata() ?>
+			<?php wp_reset_postdata() ?> 
+		</div><!--grid-->
+	<?php else : ?>
 
-			<?php
-			//  endwhile; 
-			?> 
+		<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		
-
-			<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-			<?php endif; ?>
-			</div><!--grid-->
+	<?php endif; ?>
+			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
