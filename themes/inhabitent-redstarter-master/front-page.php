@@ -41,6 +41,54 @@ get_header('about'); ?>
 		
 
 		<div class="entry-content">
+	 
+		
+		
+		<div class="products_info">
+  <h2> Shop Stuff</h2>
+
+  <div class="product-container">
+  <?php 
+   
+   $termArgs=[
+	   'taxonomy'=>'product-type',
+	   'hide_empty' => true,
+   ];
+
+   $terms =get_terms($termArgs);
+   foreach ( $terms as $term ) {
+
+	echo '<div class ="product-wrapper">';
+   $icon = get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg';
+
+   
+   echo '<img src="' . $icon . '" />';
+   echo '<p>';
+   echo $term->description;
+  
+   echo '</p>';
+   echo '<p>';
+
+   echo '<a href="get_term_link($term)">'; ?>
+   <button class="Stuff">
+  <?php echo $term->name .' Stuff';
+  echo '</button>';
+   echo '</a>';
+   echo '</p>';
+//    echo get_term_link($term);
+   echo '</div>';
+ 
+}
+
+
+ ?>
+
+</div>
+
+
+
+
+
 		<section class="journal-info">
 
 		<?php
@@ -68,18 +116,20 @@ get_header('about'); ?>
 	<div class="post-item-image">
        <?php echo get_the_post_thumbnail($journal->ID); ?>
 	</div>
+	<div class="product-info-wrapper">
 	<div class="post-item-date-comment">
 	   <?php echo $post_date; ?> / <?php echo  $post_comment ?>
 	</div>
 	<div class="post-item-title">
+		<h3>
 	   <a href="<?php echo  $post_comment_pemalink ?> "><?php echo $post_title ?>
-		</a>
+		</a></h3>
 		
 	</div>
 	<a href="<?php echo  $post_comment_pemalink ?>"> 
     <button class="button-read-entry">Read Entry</button>	
 	</a>
-	
+	</div>
 
 	</div>
 <?php endforeach ?>
@@ -87,37 +137,6 @@ get_header('about'); ?>
 </div>
 
 </section>
-
-
-
-      <div class="products_info">
-  <h2> Shop Stuff</h2>
-
-  <div class="product-container">
-  <?php 
-   
-   $termArgs=[
-	   'taxonomy'=>'product-type',
-	   'hide_empty' => true,
-   ];
-
-   $terms =get_terms($termArgs);
-   foreach ( $terms as $term ) {
-
-
-   $icon = get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg';
-
-   
-   echo '<img src="' . $icon . '" />';
-   echo $term->name;
-   echo $term->description;
-//    echo get_term_link($term);
-}
-
-
- ?>
-
-</div>
 
 
 

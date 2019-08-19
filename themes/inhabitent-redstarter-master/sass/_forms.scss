@@ -111,3 +111,14 @@ input[type=submit],button, input[type=button], input[type=reset] {
 		box-shadow: unset;
 	}
 }
+
+.button-read-entry{
+	background-color: transparent;
+	border: 1px solid #000;
+	color: #000;
+
+	&:hover{
+		background-color:$color__link;
+		color: $color__background-body;
+	}
+}
