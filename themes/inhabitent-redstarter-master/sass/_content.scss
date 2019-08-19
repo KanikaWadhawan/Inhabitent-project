@@ -366,9 +366,74 @@
 		}
 	}
 
+}
 
+/* Single-Adventure Post */
 
+.single-adventure{
 
+	.site-header{
+
+        background-color: transparent;
+        border-bottom: 0;
+        position: absolute;
+        text-shadow: 1px 1px 2px #323232;
+
+        .brand-logo{
+            color:$color__background-body;
+        }
+        .mini-navigation{
+             a{
+            color:$color__background-body;
+        
+            &:hover {
+                color: $color__background-ins;
+            }
+           
+        }
+        .search-submit {
+            color:$color__background-body;
+        }
+
+        .search-field{
+            padding-left: 0px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            padding-right: 0px;
+        }
+    }
+}
+.site-content{
+	margin-left:0px;
+	margin-right:0px;
+	width:auto;
+	
+
+}
+
+.content-area{
+
+	flex-grow:1;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-top:0px;
+	border:none;
+}
+
+.entry-header .entry-title, .entry-meta, .entry-content, .social-buttons{
+	margin-left:auto;
+	margin-right:auto;
+	max-width:800px;
+   
+    .social-buttons{
+		margin-bottom:2.5rem;
+	}
+
+	i{
+		margin-right:1rem;
+	}
+	
+}
 
 
 }
