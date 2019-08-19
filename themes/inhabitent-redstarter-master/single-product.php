@@ -9,15 +9,22 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		
+	
 		<?php while ( have_posts() ) : the_post(); ?>
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	      <header class="entry-header">
+		 
+			  <div class ="thumbnail-wrapper">
 		  <?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		  <?php endif; ?>
+			</div>
 
+			</header><!-- .entry-header -->
+
+			<div class ="content-wrapper">
           <?php the_title( '<h1 class="entry-title">', '</h1>' ); 
          
           
@@ -26,10 +33,8 @@ get_header(); ?>
          $<?php  echo CFS()->get( 'product_price' );?>
          </div>
 
-		  <div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		   </div><!-- .entry-meta -->
-	      </header><!-- .entry-header -->
+		 
+	      
 
 	      <div class="entry-content">
 		  <?php the_content(); ?>
@@ -39,17 +44,18 @@ get_header(); ?>
 				'after'  => '</div>',
 			) );
 		  ?>
+		  </div>
+		   
+		  <?php get_template_part( 'template-parts/content', 'social'); ?>
 	      </div><!-- .entry-content -->
-
-	     <footer class="entry-footer">
-		<?php red_starter_entry_footer(); ?>
-	    </footer><!-- .entry-footer -->
+  
+	    
         </article><!-- #post-## -->
 
             
+	
 
-
-			<?php the_post_navigation(); ?>
+			
 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
@@ -63,5 +69,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

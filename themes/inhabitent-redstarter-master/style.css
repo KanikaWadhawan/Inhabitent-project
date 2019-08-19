@@ -905,6 +905,8 @@ a {
     border-bottom: 1px dashed #c8c8c8;
     margin-bottom: 3rem;
     text-align: center; }
+    .tax-product-type .site-content .content-area .page-header .page-title {
+      font-size: 2.4rem; }
     .tax-product-type .site-content .content-area .page-header h1 {
       text-align: center; }
     .tax-product-type .site-content .content-area .page-header .taxonomy-description {
@@ -996,10 +998,49 @@ a {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px; }
-  .single-adventure .entry-header .entry-title .social-buttons, .single-adventure .entry-meta .social-buttons, .single-adventure .entry-content .social-buttons, .single-adventure .social-buttons .social-buttons {
-    margin-bottom: 2.5rem; }
   .single-adventure .entry-header .entry-title i, .single-adventure .entry-meta i, .single-adventure .entry-content i, .single-adventure .social-buttons i {
     margin-right: 1rem; }
+
+.single-adventure .social-buttons {
+  margin-bottom: 2.5rem; }
+
+/* Single Product Post */
+.single-product .content-area {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 0px;
+  padding-bottom: 48px;
+  padding: top 48px;
+  border: none; }
+  .single-product .content-area .hentry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .single-product .content-area .hentry .entry-header {
+      -ms-flex-preferred-size: 48%;
+          flex-basis: 48%; }
+      .single-product .content-area .hentry .entry-header .thumbnail-wrapper img {
+        width: auto; }
+    .single-product .content-area .hentry .content-wrapper {
+      -ms-flex-preferred-size: 48%;
+          flex-basis: 48%; }
+      .single-product .content-area .hentry .content-wrapper .entry-title {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #d99054; }
+      .single-product .content-area .hentry .content-wrapper .product_price {
+        font-family: 'Novecento Sans Web',sans-serif;
+        font-size: 1.2rem;
+        margin-top: 0;
+        text-transform: uppercase; }
+      .single-product .content-area .hentry .content-wrapper .entry-content {
+        margin-top: 0px; }
+      .single-product .content-area .hentry .content-wrapper .social-buttons i {
+        margin-right: 1rem; }
 
 /*--------------------------------------------------------------
 # Media
