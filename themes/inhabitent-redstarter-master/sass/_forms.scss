@@ -107,7 +107,7 @@ input[type=submit],button, input[type=button], input[type=reset] {
 	box-shadow: unset;
 	
 	&:hover{
-		background-color:$color__text-screen;
+		background-color: darken($color__link, 15%);
 		box-shadow: unset;
 	}
 }

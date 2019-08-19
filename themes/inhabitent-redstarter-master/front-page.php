@@ -69,7 +69,9 @@ get_header('about'); ?>
    echo '</p>';
    echo '<p>';
 
-   echo '<a href="get_term_link($term)">'; ?>
+   echo '<a href="' . get_term_link($term). '">';
+   
+   ?>
    <button class="Stuff">
   <?php echo $term->name .' Stuff';
   echo '</button>';
@@ -106,7 +108,8 @@ get_header('about'); ?>
 <div class="post-container">
 
 <?php foreach ($journals as $journal): setup_postdata($journal); ?>
-<?php $post_date =$journal-> post_date;
+<?php 
+      $post_date =  Date('j F Y', strtotime( substr($journal -> post_date, 0, 10) )); 
 	 $post_title= $journal-> post_title;
 	 $post_comment =$journal-> comment_count;
 	 $post_comment_pemalink =$journal-> guid;
@@ -118,7 +121,7 @@ get_header('about'); ?>
 	</div>
 	<div class="product-info-wrapper">
 	<div class="post-item-date-comment">
-	   <?php echo $post_date; ?> / <?php echo  $post_comment ?>
+	   <?php echo $post_date; ?> / <?php echo  $post_comment . ' Comments' ?>
 	</div>
 	<div class="post-item-title">
 		<h3>

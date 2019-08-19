@@ -140,6 +140,11 @@
 		padding-left: 70px;
 		p{
 			color:$color__background-body;
+			
+			i{
+				font-size: 1.25rem;
+				margin-right: .5rem;
+			}
 		}
 		h3{
 			color: $color__heading;
@@ -147,7 +152,14 @@
 		.footer-logo{
 			max-width: 50%;
 			margin-top:30px;
-			margin-left: 50px;
+			margin-left: 180px;
+		}
+		.contact-info{
+			p:hover{
+				
+					text-decoration: underline;
+				
+			}
 		}
 		
 	}
@@ -246,7 +258,7 @@
 
 			.product-grid-item .product-info-price {
 				
-				font-family: Merriweather Web,serif;
+				font-family: 'Merriweather Web',serif;
 				letter-spacing: 0;
 				
 				padding-right: 15px;

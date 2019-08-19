@@ -504,7 +504,7 @@ input[type=submit], button, input[type=button], input[type=reset] {
   -webkit-box-shadow: unset;
           box-shadow: unset; }
   input[type=submit]:hover, button:hover, input[type=button]:hover, input[type=reset]:hover {
-    background-color: #21759b;
+    background-color: #144d49;
     -webkit-box-shadow: unset;
             box-shadow: unset; }
 
@@ -796,12 +796,17 @@ a {
     padding-left: 70px; }
     .site-footer .footer-class p {
       color: #fff; }
+      .site-footer .footer-class p i {
+        font-size: 1.25rem;
+        margin-right: .5rem; }
     .site-footer .footer-class h3 {
       color: #d99054; }
     .site-footer .footer-class .footer-logo {
       max-width: 50%;
       margin-top: 30px;
-      margin-left: 50px; }
+      margin-left: 180px; }
+    .site-footer .footer-class .contact-info p:hover {
+      text-decoration: underline; }
   .site-footer .copyright {
     text-align: center;
     text-transform: uppercase;
@@ -871,7 +876,7 @@ a {
       .post-type-archive-product .site-content .content-area .product-grid .dots::after {
         content: '...................................................'; }
     .post-type-archive-product .site-content .content-area .product-grid .product-grid-item .product-info-price {
-      font-family: Merriweather Web,serif;
+      font-family: 'Merriweather Web',serif;
       letter-spacing: 0;
       padding-right: 15px; }
     .post-type-archive-product .site-content .content-area .product-grid .product-grid-item .product-info {
