@@ -516,6 +516,14 @@ input[type=submit], button, input[type=button], input[type=reset] {
     background-color: #248A83;
     color: #fff; }
 
+.button-read-more {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff; }
+  .button-read-more:hover {
+    background-color: #248A83;
+    color: #fff; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1024,8 +1032,8 @@ object {
   margin: none;
   width: auto; }
   .home .site-content .home-hero {
-    -ms-flex-align: center;
     -webkit-box-align: center;
+        -ms-flex-align: center;
             align-items: center;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
@@ -1041,6 +1049,8 @@ object {
     -webkit-box-pack: center;
             justify-content: center;
     height: 100vh; }
+    .home .site-content .home-hero img {
+      width: auto; }
 
 .home .content-area {
   -webkit-box-flex: 1;
@@ -1076,6 +1086,8 @@ object {
           -ms-flex: 0 1 32%;
               flex: 0 1 32%;
       position: relative; }
+      .home .content-area .journal-info .post-container .post-items img {
+        width: auto; }
       .home .content-area .journal-info .post-container .post-items .product-info-wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1118,6 +1130,53 @@ object {
       .home .content-area .products_info .product-container .product-wrapper img {
         height: 70px;
         width: 70px; }
+  .home .content-area .post-adventure .adventure-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 2fr;
+    grid-gap: 20px 20px;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+    height: 542px; }
+    .home .content-area .post-adventure .adventure-container .wrapper:nth-child(1) {
+      grid-column: 1/span 2;
+      grid-row: 1/span 2; }
+    .home .content-area .post-adventure .adventure-container .wrapper:nth-child(2) {
+      grid-column: 3/span 2;
+      grid-row: 1/2; }
+      .home .content-area .post-adventure .adventure-container .wrapper:nth-child(2) .adventure-info .adventure-title h3 {
+        font-size: 2rem; }
+    .home .content-area .post-adventure .adventure-container .wrapper:nth-child(3) {
+      grid-column: 3/4;
+      grid-row: 2/3; }
+      .home .content-area .post-adventure .adventure-container .wrapper:nth-child(3) .adventure-info .adventure-title h3 {
+        font-size: 1.5rem;
+        margin-top: 15px; }
+    .home .content-area .post-adventure .adventure-container .wrapper:nth-child(4) {
+      grid-column: 4/5;
+      grid-row: 2/3; }
+      .home .content-area .post-adventure .adventure-container .wrapper:nth-child(4) .adventure-info .adventure-title h3 {
+        font-size: 1.5rem;
+        margin-top: 15px; }
+    .home .content-area .post-adventure .adventure-container .adventure-info {
+      margin: 1.5rem;
+      z-index: 2; }
+      .home .content-area .post-adventure .adventure-container .adventure-info .adventure-title h3 {
+        font-size: 3rem;
+        font-family: 'Merriweather Web',serif;
+        font-weight: 400;
+        margin-top: 24px;
+        text-transform: none; }
+        .home .content-area .post-adventure .adventure-container .adventure-info .adventure-title h3 a {
+          color: #fff; }
+          .home .content-area .post-adventure .adventure-container .adventure-info .adventure-title h3 a:hover {
+            color: #fff9c0; }
+  .home .content-area .more-adventure {
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+    font-size: 1.4rem;
+    font-weight: 400; }
 
 /* About page */
 .page-about .site-header {

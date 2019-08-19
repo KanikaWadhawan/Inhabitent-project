@@ -35,7 +35,7 @@ get_header('about'); ?>
 		<main id="main" class="site-main" role="main">
 
 		<section class="home-hero">
-			<img src='images/logos/inhabitent-logo-full.svg' alt='Inhabitent logo'>
+			<img src="<?php echo get_template_directory_uri().'/images/logos/inhabitent-logo-full.svg' ?>" alt="Inhabitent logo">
 		</section>
 
 		
@@ -75,7 +75,7 @@ get_header('about'); ?>
   echo '</button>';
    echo '</a>';
    echo '</p>';
-//    echo get_term_link($term);
+// echo get_term_link($term);
    echo '</div>';
  
 }
@@ -153,6 +153,7 @@ $adventures = get_posts( $adventure_list );
 
 <div class="post-adventure">
 <h2>Latest Adventure</h2>
+<div class="adventure-container">
 <?php foreach ($adventures as $adventure): setup_postdata($adventure); ?>
 <?php 
 	 $post_title= $adventure-> post_title;
@@ -161,30 +162,46 @@ $adventures = get_posts( $adventure_list );
 
 ?>
 
-<div class="adventure-image">
-       <?php echo get_the_post_thumbnail($adventure->ID); ?>
-</div>
+	<div class="wrapper"  style=" 
+		
+			background:
+				linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%),
+				url('<?php echo get_the_post_thumbnail_url($adventure->ID); ?>');
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				
+			">
+     
 
+<div class ="adventure-info">
 <div class="adventure-title">
-       <?php echo  $post_title; ?>
+	<h3>
+		<a href="<?php echo  $post_permalink ?>"> 
+			<?php echo  $post_title; ?>
+		</a>  
+	</h3>
 </div>
 
 <div class="adventure-link">
 <a href="<?php echo  $post_permalink ?>"> 
     <button class="button-read-more">Read More</button>	
 	</a>
-
-
 </div>
 
+</div>
+</div>
 
 <?php endforeach ?>
 <?php wp_reset_postdata() ?>
-<a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>">
-<button>More Adventures </button>
-</a>
 
+<!-- </a> -->
 </div>
+</div>
+
+<a href="<?php echo get_post_type_archive_link( 'adventure' ); ?>">
+<button class="more-adventure">More Adventures </button>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>

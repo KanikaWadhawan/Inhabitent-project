@@ -122,3 +122,15 @@ input[type=submit],button, input[type=button], input[type=reset] {
 		color: $color__background-body;
 	}
 }
+
+.button-read-more{
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+
+	&:hover{
+		background-color:$color__link;
+		color: $color__background-body;
+	}
+
+}
