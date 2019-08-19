@@ -4,6 +4,136 @@
 
 /* Front page */
 
+.home{
+   
+    .site-header{
+
+        background-color: transparent;
+        border-bottom: 0;
+        position: absolute;
+        text-shadow: 1px 1px 2px #323232;
+
+        .brand-logo{
+            color:$color__background-body;
+        }
+        .mini-navigation{
+             a{
+            color:$color__background-body;
+        
+            &:hover {
+                color: $color__background-ins;
+            }
+           
+        }
+        .search-submit {
+            color:$color__background-body;
+        }
+
+        .search-field{
+            padding-left: 0px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            padding-right: 0px;
+        }
+    }
+}
+
+.site-content{
+    margin:none;
+    width:auto;
+
+    .home-hero {
+        -ms-flex-align: center;
+        align-items: center;
+        background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
+        background-size: cover,cover;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+   
+
+}
+
+
+.content-area{
+
+    flex-grow:1;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top:0px;
+    border:none;
+
+    .entry-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1120px;
+    }
+
+    .journal-info{
+
+        .post-title {
+            font-size: 38.4px;
+            font-size: 2.4rem;
+            font-weight: 400;
+            margin-bottom: 3.75rem;
+            text-align: center;
+        }
+
+        .post-container{
+            display: flex;
+           
+            justify-content: space-between;
+          
+            margin-bottom: 0;
+            margin-left: 0;
+            padding-left: 0;
+
+            .post-items{
+                border: 1px solid #e1e1e1;
+   
+                flex: 0 1 32%;
+                position: relative;
+            }
+        }
+    }
+    
+}
+
+ 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -5,10 +5,9 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+get_header('about'); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	
 
 		
 
@@ -21,14 +20,7 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
+		
 
 
 		<?php else : ?>
@@ -36,6 +28,20 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
+
+ 
+
+		<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		<section class="home-hero">
+			<img src='images/logos/inhabitent-logo-full.svg' alt='Inhabitent logo'>
+		</section>
+
+		
+
+		<div class="entry-content">
+		<section class="journal-info">
 
 		<?php
    $args = array(
@@ -79,6 +85,9 @@ get_header(); ?>
 <?php endforeach ?>
 <?php wp_reset_postdata() ?>
 </div>
+
+</section>
+
 
 
       <div class="products_info">
@@ -159,6 +168,6 @@ $adventures = get_posts( $adventure_list );
 </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+</div>
 
 <?php get_footer(); ?>

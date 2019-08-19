@@ -55,24 +55,6 @@
 
 
 
-// .entry-title{
-// 	top: 0;
-// 	position: absolute;
-// 	background-color:$color__link;
-// 	color:$color__background-body;
-// }
-
-// .entry-meta{
-// 	position: absolute;
-//     bottom: 0;
-//     background-color:$color__link;
-// 	color:$color__background-body;
-// }
-
-// .entry-header {
-// 	position: relative;
-// }
-
 .site-content{
 	display: flex;
 	margin-left: auto;
@@ -144,15 +126,7 @@
 		
 	
 
-.post-title{
-	text-align:center;
-	text-transform: uppercase;
-	font-family: $font__header;
-}
 
-.post-container{
-	@include flex-items-content(center,space-between);
-}
 
 
 .site-footer{

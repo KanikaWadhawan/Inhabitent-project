@@ -770,22 +770,6 @@ a {
   padding-left: 5%;
   width: 27%; }
 
-.post-title {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Novecento Sans Web", sans-serif; }
-
-.post-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
 .site-footer {
   background: url(../../images/dark-wood@2x.png);
   height: 300px; }
@@ -1009,6 +993,82 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home .site-header {
+  background-color: transparent;
+  border-bottom: 0;
+  position: absolute;
+  text-shadow: 1px 1px 2px #323232; }
+  .home .site-header .brand-logo {
+    color: #fff; }
+  .home .site-header .mini-navigation a {
+    color: #fff; }
+    .home .site-header .mini-navigation a:hover {
+      color: #fff9c0; }
+  .home .site-header .mini-navigation .search-submit {
+    color: #fff; }
+  .home .site-header .mini-navigation .search-field {
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px; }
+
+.home .site-content {
+  margin: none;
+  width: auto; }
+  .home .site-content .home-hero {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg) no-repeat top;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    height: 100vh; }
+
+.home .content-area {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  border: none; }
+  .home .content-area .entry-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px; }
+  .home .content-area .journal-info .post-title {
+    font-size: 38.4px;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 3.75rem;
+    text-align: center; }
+  .home .content-area .journal-info .post-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0; }
+    .home .content-area .journal-info .post-container .post-items {
+      border: 1px solid #e1e1e1;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 32%;
+              flex: 0 1 32%;
+      position: relative; }
+
 /* About page */
 .page-about .site-header {
   background-color: transparent;
