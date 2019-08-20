@@ -3,7 +3,7 @@ This is a Wordpress site containing custom wordpress template and a custom plugi
 
 * Fixed Width size: 1120px.
 
-##This site is based on :
+## This site is based on :
 
 ## RED Starter Theme
 
@@ -30,6 +30,8 @@ Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Br
 ## RED Widget Boilerplate
 
 A Wordpress starter plugin for customizable Business Hour Widget.
+
+Lightly forked from the [WordPress Widget Boilerplate](https://github.com/tommcfarlin/WordPress-Widget-Boilerplate) by [@tommcfarlin](https://github.com/tommcfarlin).
 
 
 #Technologies Used
