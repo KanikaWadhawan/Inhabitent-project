@@ -61,31 +61,31 @@ phpMyAdmin is a free and open source administration tool for MySQL and MariaDB. 
 ## Website Preview
 
 ### Homepage
-![Homepage Preview](images/home-page.png)
+![Homepage Preview](themes/inhabitent-redstarter-master/images/home-page.png)
 
 ### Shop 
-![Shop Preview](images/shop.png)
+![Shop Preview](themes/inhabitent-redstarter-master/images/shop.png)
 
 ### Product Type
-![Product-type Preview](images/product-type.png)
+![Product-type Preview](themes/inhabitent-redstarter-master/images/product-type.png)
 
 
 ### Journals
-![Journals Preview](images/journals.png)
+![Journals Preview](themes/inhabitent-redstarter-master/images/journals.png)
 
 ### About
-![About Preview](images/about.png)
+![About Preview](themes/inhabitent-redstarter-master/images/about.png)
 
 ### FindUs
-![Contact Preview](images/contact.png)
+![Contact Preview](themes/inhabitent-redstarter-master/images/contact.png)
 
 ### Latest Adventure (Single Post)
-![Single Preview](images/single-adventure.png)
+![Single Preview](themes/inhabitent-redstarter-master/images/single-adventure.png)
 
 ### Shop Stuff (Single Product)
-![Shop Preview](images/single-product.png)
+![Shop Preview](themes/inhabitent-redstarter-master/images/single-product.png)
 
 ### Inhabitent Journal (Single Post)
-![Post Preview](images/single-post.png)
+![Post Preview](themes/inhabitent-redstarter-master/images/single-post.png)
 
 
