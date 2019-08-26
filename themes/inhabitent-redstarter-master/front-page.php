@@ -77,7 +77,7 @@ get_header('about'); ?>
   echo '</button>';
    echo '</a>';
    echo '</p>';
-// echo get_term_link($term);
+
    echo '</div>';
  
 }
@@ -198,7 +198,7 @@ $adventures = get_posts( $adventure_list );
 <?php endforeach ?>
 <?php wp_reset_postdata() ?>
 
-<!-- </a> -->
+
 </div>
 </div>
 

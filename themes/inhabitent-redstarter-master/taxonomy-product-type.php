@@ -51,7 +51,7 @@ get_header(); ?>
 				echo '</div>';
 				echo '<div class="dots"></div>'; 
 
-				// echo '.................';
+			
 				echo '<div class="product-info-price">';
 				echo '$'.CFS()-> get('product_price');
 				echo '</div>';

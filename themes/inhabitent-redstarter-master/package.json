@@ -1,7 +1,7 @@
 {
-  "name": "redstarter",
+  "name": "inhabitent",
   "version": "1.1.0",
-  "description": "A starter theme for RED students, based on Underscores.",
+  "description": "A Wordpress Starter Theme",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.23.6",
@@ -28,7 +28,7 @@
     "type": "git",
     "url": "git+https://github.com/redacademy/redstarter.git"
   },
-  "author": "redacademy",
+  "author": "Kanika Wadhawan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/redacademy/redstarter/issues"

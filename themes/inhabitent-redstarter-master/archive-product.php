@@ -45,7 +45,7 @@ get_header(); ?>
 
 				<?php /* Start the Loop */ ?>
 				 <?php
-				//   while ( have_posts() ) : the_post();
+			
 				 ?> 
 		<div class="product-grid">
 			<?php
@@ -76,7 +76,7 @@ get_header(); ?>
 				echo '</div>';
 				echo '<div class="dots"></div>'; 
 
-				// echo '.................';
+			
 				echo '<div class="product-info-price">';
 				echo '$'.CFS()-> get('product_price');
 				echo '</div>';
