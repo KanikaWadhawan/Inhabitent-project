@@ -532,6 +532,13 @@ input[type=submit], button, input[type=button], input[type=reset] {
     background-color: #248A83;
     color: #fff; }
 
+.error404 .form .label-button input[type=email], .error404 .form .label-button input[type=password], .error404 .form .label-button input[type=search], .error404 .form .label-button input[type=text], .error404 .form .label-button input[type=url], .error404 .form .label-button textarea {
+  color: #666;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+  width: 11rem; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1324,3 +1331,5 @@ object {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px; }
+
+/* 404 Page */

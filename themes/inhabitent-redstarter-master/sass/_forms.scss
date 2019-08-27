@@ -85,7 +85,7 @@ textarea {
 .search-submit{
 	border:none;
 	border-radius:unset;
-	// position: absolute;
+
 	background-color: transparent;
 	color:$color__link;
 }
@@ -144,5 +144,18 @@ input[type=submit],button, input[type=button], input[type=reset] {
 		&:hover{
 			background-color:$color__link;
 			color: $color__background-body;
+		}
+	}
+
+	.error404{
+
+		.form .label-button  {
+			input[type=email], input[type=password], input[type=search], input[type=text], input[type=url], textarea {
+				color: #666;
+				background-color: #f4f4f4;
+				border: 1px solid #e1e1e1;
+				border-radius: 0;
+				width:11rem;
+			}
 		}
 	}
