@@ -20,5 +20,14 @@
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
+		<div class="entry-content">
+
+
+    <a href="<?= esc_url( get_permalink() );?>">
+		<button type="button" class="button-type">Read more →</button>
+		</a>
+		</div><!-- .entry-content -->
 	</div><!-- .entry-summary -->
+
+	
 </article><!-- #post-## -->
