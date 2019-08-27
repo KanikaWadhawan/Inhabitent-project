@@ -52,7 +52,7 @@ get_header(); ?>
   			 $args = array(
 		    'post_type' => 'product',
 			'order' => 'ASC',
-			'posts_per_page'=>-1,
+			'posts_per_page'=>16,
 				);
        		 $images = get_posts( $args );
 			?>
