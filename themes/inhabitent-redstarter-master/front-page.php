@@ -62,7 +62,7 @@ get_header('about'); ?>
    $icon = get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg';
 
    
-   echo '<img src="' . $icon . '" />';
+   echo '<img src="' . $icon . '" / alt="icon">';
    echo '<p>';
    echo $term->description;
   

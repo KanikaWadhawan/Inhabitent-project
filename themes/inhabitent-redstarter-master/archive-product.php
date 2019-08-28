@@ -57,7 +57,6 @@ get_header(); ?>
        		 $images = get_posts( $args );
 			?>
 
-	        
 			<?php foreach ($images as $image): setup_postdata($image); ?>
 				<?php 
 			
